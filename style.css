@@ -1,7 +1,58 @@
-.banner_graphic {
-background-image: url('DSC00556.JPG');
-background-position: center;
-background-size: auto;
-width: 40vw;
-background-repeat: no-repeat;
+body {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+#imagesidebar {
+    display: flex;
+}
+
+#lefthero {
+    background-image: url('halie-west-25xggax4bSA-unsplash.JPG');
+    background-size: cover;
+    min-width: 345px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#lefthero p{
+    color: white;
+}
+
+#imagesidebar img{
+    width: 5rem;
+    padding: 10px;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+}
+
+#popbox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#fillbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#fillcolumn1 {
+    
+}
+
+#fillcolumn2 {
+    
 }
