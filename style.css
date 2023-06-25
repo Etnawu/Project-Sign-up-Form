@@ -1,58 +1,42 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../Project-Sign-up-Form/fonts/Norse-Bold.otf);
+}
+
 body {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-#imagesidebar {
-    display: flex;
-}
-
-#lefthero {
-    background-image: url('halie-west-25xggax4bSA-unsplash.JPG');
-    background-size: cover;
-    min-width: 345px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#lefthero p{
-    color: white;
-}
-
-#imagesidebar img{
-    width: 5rem;
-    padding: 10px;
-}
-
-#right {
-    display: flex;
-    flex-direction: column;
-}
-
-#popbox {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#fillbox {
+.main{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    width: 100vw;
+    height: 100vh;
 }
 
-#fillcolumn1 {
-    
+.imagebanner {
+    background-image: url(./imgs/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33vw;
+    color: white;
+    font-family: Norse-Bold, sans-serif;
 }
 
-#fillcolumn2 {
-    
+.fillbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraphbox{
+    height: 40vh;
+}
+
+.formbox {
+    height: 30vh;
+}
+
+.buttonbox {
+    height: 30vh;
 }
