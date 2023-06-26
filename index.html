@@ -10,23 +10,115 @@
 <body>
     <div class="main">
         <div class="imagebanner">
-                <h1>cock</h1>
-        </div>
+            <div class="logo">
+                <div class="semi-transparent">
+                    <img src="./imgs/odin-lined.png" alt="ODIN logo" height="100px">
+                    <h1>ODIN</h1>
+                </div>
+            </div>
 
+            <div class="imagefooter">
+                <p>Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            </div>
+        </div>
+        
 
 
         <div class="fillbox">
-            <div class="paragraphbox">
-                <h2>This is not a real online service! You know you need something <br>
-                    like this in your life to help you realize your deepest dreams. <br>
-                    Sign up <i>now</i> to get started.
-                </h2>
-            </div>
-            <div class="formbox">
-            </div>
-            <div class="buttonbox">ass</div>
 
-        </div>
+            <div class="paragraphbox">
+                <h3>This is not a real online service! You know you need something <br>
+                    like this in your life to help you realize your deepest dreams. <br>
+                    Sign up <i>now</i> to get started. 
+                    <br>
+                    <br>
+                    You <i>know</i> you want to
+                </h3>
+            </div>
+                
+
+
+
+            <form action="" method="get">
+            <div class="formbox">
+                
+                <h3 id="letsdothis">Let's do this!</h3>
+
+
+            <div class="formmain">
+                <div class="formbucket">    
+                    <div class="form">  
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+
+                    <div class="form"> 
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form"> 
+                        <label for="pw">PASSWORD</label>
+                        <input type="password" id="pw" name="pw" required>
+                        
+                    </div>  
+                </div>
+
+                <div class="formbucket">  
+                    <div class="form">  
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div> 
+                    
+                    <div class="form">  
+                        <label for="phnum">PHONE NUMBER</label>
+                        <input type="tel" id="phnum" name="phnum">
+                    </div> 
+
+                    <div class="form"> 
+                        <label for="confpw">CONFIRM PASSWORD</label>
+                        <input type="password" id="confpw" name="confpw" required>
+                        <p id="error"></p>
+                    </div>
+                </div>  
+
+            </div>
+            </div>
+                <div class="buttonbox">
+                    <button type="submit" class="submitbtn">Create Account</button>
+                    <div class="login">
+                        <p>Already have an account? <a href="">Login</a></p>
+                    </div>
+                
+            </form>
+                </div>
+            
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let passwordInput = document.querySelector("#pw");
+        let confPasswordInput = document.querySelector("#confpw");
+        let error = document.querySelector("#error");
+
+        let form = document.querySelector("form");
+
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let password = passwordInput.value;
+            let confpw = confPasswordInput.value;
+
+            if (password !== confpw) {
+                error.innerHTML = "Passwords do not match";
+            } else {
+                error.innerHTML = "";
+                form.submit(); 
+            }
+        });
+    });
+</script>
 </body>
 </html>
 

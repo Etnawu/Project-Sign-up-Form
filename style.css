@@ -6,6 +6,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Norse-Bold, sans-serif;
 }
 
 .main{
@@ -21,22 +22,141 @@ body {
     background-size: cover;
     width: 33vw;
     color: white;
-    font-family: Norse-Bold, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagebanner a{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.imagebanner p{
+    font-size: 12px;
+}
+
+.imagefooter {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.semi-transparent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.logo {
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
 }
 
 .fillbox {
     display: flex;
     flex-direction: column;
+    background-color: rgb(233, 233, 235);
+    width: 67vw;
 }
 
 .paragraphbox{
-    height: 40vh;
+    height: 33vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .formbox {
-    height: 30vh;
+    background-color: white;
+    height: auto;
+    font-size: 12px;
+    box-shadow: 2px 5px #E5E7EB;
+}
+
+#letsdothis {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.formmain {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+} 
+
+input:invalid:focus {
+    border: 1px solid red;
+}
+  
+input:focus:valid {
+    border: 1px blue solid;
+}
+
+
+label {
+    font-size: 10px;
+    color: gray;
+}
+
+#error {
+    color:red;
+    font-size: 10px;
+    margin: 2px;
+}
+
+.submitbtn {
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    height: 35px;
+    width: 150px;
+    box-shadow: 2px 5px #E5E7EB;
 }
 
 .buttonbox {
-    height: 30vh;
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 33vh;
 }
+
+.login {
+    margin-top: 30px;
+}
+
+a {
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: low;
+}
+
